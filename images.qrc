@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>resources/new.png</file>
+        <file>resources/open.png</file>
+        <file>resources/save.png</file>
+        <file>resources/qled.png</file>
+        <file>resources/square_red.png</file>
+        <file>resources/led_triangular_1_green.png</file>
+        <file>resources/start.png</file>
+        <file>resources/stop.png</file>
+        <file>resources/icon.png</file>
+        <file>resources/icon2.png</file>
+        <file>resources/icon3.png</file>
+        <file>resources/left.png</file>
+        <file>resources/slides.svg</file>
+        <file>resources/film.svg</file>
+        <file>resources/refresh.svg</file>
+        <file>resources/save.svg</file>
+        <file>resources/new.svg</file>
+        <file>resources/open.svg</file>
+        <file>resources/photoframe.svg</file>
+        <file>resources/stop-red.svg</file>
+        <file>resources/pause.svg</file>
+        <file>resources/stop.svg</file>
+        <file>resources/go.svg</file>
+        <file>resources/open2.svg</file>
+        <file>resources/open3.svg</file>
+        <file>resources/tools.svg</file>
+        <file>resources/arrows.svg</file>
+        <file>resources/clock.svg</file>
+        <file>resources/paint.svg</file>
+        <file>resources/colors.svg</file>
+        <file>resources/dvd.svg</file>
+        <file>resources/monitor.svg</file>
+        <file>resources/movie.svg</file>
+        <file>resources/note.svg</file>
+        <file>resources/dossier.svg</file>
+        <file>resources/cd2.svg</file>
+        <file>resources/notes.svg</file>
+        <file>resources/note2.svg</file>
+        <file>resources/mixer.svg</file>
+        <file>resources/plus.svg</file>
+        <file>resources/minus.svg</file>
+        <file>resources/go-up.svg</file>
+        <file>resources/go-down.svg</file>
+    </qresource>
+</RCC>

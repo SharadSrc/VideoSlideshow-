@@ -1,0 +1,1504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>nodePropertiesDialog</class>
+ <widget class="QDialog" name="nodePropertiesDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>816</width>
+    <height>777</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Slide Properties</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QListWidget" name="listWidget">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>110</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(166, 166, 166, 255), stop:0.352381 rgba(227, 227, 227, 255), stop:1 rgba(255, 255, 255, 255));</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>100</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="viewMode">
+          <enum>QListView::IconMode</enum>
+         </property>
+         <item>
+          <property name="text">
+           <string>Image</string>
+          </property>
+          <property name="background">
+           <brush brushstyle="NoBrush">
+            <color alpha="0">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </property>
+          <property name="icon">
+           <iconset resource="images.qrc">
+            <normaloff>:/new/prefix1/resources/film.svg</normaloff>:/new/prefix1/resources/film.svg</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Transition</string>
+          </property>
+          <property name="icon">
+           <iconset resource="images.qrc">
+            <normaloff>:/new/prefix1/resources/refresh.svg</normaloff>:/new/prefix1/resources/refresh.svg</iconset>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(218, 218, 218);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="Image">
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_7">
+             <item row="0" column="0">
+              <widget class="QGroupBox" name="groupBox">
+               <property name="title">
+                <string>Image</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_6">
+                <item row="0" column="0">
+                 <layout class="QGridLayout" name="gridLayout_5">
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_2">
+                    <property name="text">
+                     <string>Image Path</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2" colspan="3">
+                   <widget class="QLineEdit" name="imagePath">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="label_11">
+                    <property name="text">
+                     <string>Width</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="2">
+                   <widget class="QLineEdit" name="width">
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="3">
+                   <widget class="QLabel" name="label_12">
+                    <property name="text">
+                     <string>Height</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="4">
+                   <widget class="QLineEdit" name="height">
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_15">
+                    <property name="text">
+                     <string>Image Name</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QLineEdit" name="imageName"/>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QGroupBox" name="groupBox_2">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="title">
+                <string>Image Effects</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_21">
+                <item row="0" column="0">
+                 <layout class="QGridLayout" name="gridLayout_10">
+                  <item row="0" column="2" rowspan="11">
+                   <widget class="QFrame" name="frame_2">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>320</width>
+                      <height>240</height>
+                     </size>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_8">
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="imagePreview">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>320</width>
+                         <height>240</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>Preview</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="8" column="1">
+                   <widget class="QPushButton" name="pushButton">
+                    <property name="text">
+                     <string>Mirror H</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="1">
+                   <widget class="QPushButton" name="pushButton_5">
+                    <property name="text">
+                     <string>Rotate Left</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="1">
+                   <widget class="QPushButton" name="pushButton_4">
+                    <property name="text">
+                     <string>Rotate Right</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="1">
+                   <widget class="QPushButton" name="pushButton_6">
+                    <property name="text">
+                     <string>Mirror V</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1">
+                   <widget class="QPushButton" name="pushButton_2">
+                    <property name="text">
+                     <string>Filters</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QPushButton" name="pushButton_3">
+                    <property name="text">
+                     <string>Enhance</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QPushButton" name="pushButton_7">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QPushButton" name="pushButton_8">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QPushButton" name="pushButton_9">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QPushButton" name="pushButton_11">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QPushButton" name="pushButton_10">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="Transition">
+          <layout class="QGridLayout" name="gridLayout_25">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_24">
+             <item row="0" column="0">
+              <widget class="QGroupBox" name="groupBox_3">
+               <property name="title">
+                <string>Enter Effect</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_26">
+                <item row="0" column="0">
+                 <layout class="QGridLayout" name="gridLayout_13">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_30">
+                    <property name="text">
+                     <string>Property</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="label_31">
+                    <property name="text">
+                     <string>Start Point F</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2" rowspan="2">
+                   <widget class="QLineEdit" name="enterStartPointFX"/>
+                  </item>
+                  <item row="0" column="3" rowspan="2">
+                   <widget class="QLineEdit" name="enterStartPointFY"/>
+                  </item>
+                  <item row="1" column="0" rowspan="2">
+                   <widget class="QComboBox" name="enterProperty">
+                    <item>
+                     <property name="text">
+                      <string>pos</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>rotation</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>scale</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>opacity</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLabel" name="label_32">
+                    <property name="text">
+                     <string>End Point F</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QLineEdit" name="enterEndPointFX"/>
+                  </item>
+                  <item row="2" column="3">
+                   <widget class="QLineEdit" name="enterEndPointFY"/>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_33">
+                    <property name="text">
+                     <string>Direction</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QLabel" name="label_34">
+                    <property name="text">
+                     <string>Start Val</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2" rowspan="2">
+                   <widget class="QLineEdit" name="enterStartVal">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0" rowspan="2">
+                   <widget class="QComboBox" name="enterDirection">
+                    <item>
+                     <property name="text">
+                      <string>Forward</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Backward</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QLabel" name="label_35">
+                    <property name="text">
+                     <string>End Val</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="2">
+                   <widget class="QLineEdit" name="enterEndVal">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="label_36">
+                    <property name="text">
+                     <string>Easing Curve</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1" rowspan="3">
+                   <widget class="QLabel" name="label_37">
+                    <property name="text">
+                     <string>Duration</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="2" rowspan="3">
+                   <widget class="QLineEdit" name="enterDuration"/>
+                  </item>
+                  <item row="7" column="0">
+                   <widget class="QComboBox" name="enterEasingCurve">
+                    <item>
+                     <property name="text">
+                      <string>Linear</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InQuad</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutQuad</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutQuad</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInQuad</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InCubic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutCubic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutCubic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInCubic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InQuart</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutQuart</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutQuart</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInQuart</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InQuint</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutQuint</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutQuint</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInQuint</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InSine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutSine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutSine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInSine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InExpo</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutExpo</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutExpo</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInExpo</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InCirc</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutCirc</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutCirc</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInCirc</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InElastic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutElastic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutElastic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInElastic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InBack</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutBack</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutBack</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInBack</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InBounce</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutBounce</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutBounce</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInBounce</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QGroupBox" name="groupBox_7">
+               <property name="title">
+                <string>Display Effect</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_12">
+                <item row="0" column="0">
+                 <layout class="QGridLayout" name="gridLayout_11">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_20">
+                    <property name="text">
+                     <string>Property</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="label_5">
+                    <property name="text">
+                     <string>Start Point F</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2" rowspan="2">
+                   <widget class="QLineEdit" name="displayStartPointFX"/>
+                  </item>
+                  <item row="0" column="3" rowspan="2">
+                   <widget class="QLineEdit" name="displayStartPointFY"/>
+                  </item>
+                  <item row="1" column="0" rowspan="2">
+                   <widget class="QComboBox" name="displayProperty">
+                    <item>
+                     <property name="text">
+                      <string>pos</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>rotation</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>scale</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>opacity</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLabel" name="label_6">
+                    <property name="text">
+                     <string>End Point F</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QLineEdit" name="displayEndPointFX"/>
+                  </item>
+                  <item row="2" column="3">
+                   <widget class="QLineEdit" name="displayEndPointFY"/>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_18">
+                    <property name="text">
+                     <string>Direction</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QLabel" name="label_17">
+                    <property name="text">
+                     <string>Start Val</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2" rowspan="2">
+                   <widget class="QLineEdit" name="displayStartVal">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0" rowspan="2">
+                   <widget class="QComboBox" name="displayDirection">
+                    <item>
+                     <property name="text">
+                      <string>Forward</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Backward</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QLabel" name="label_16">
+                    <property name="text">
+                     <string>End Val</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="2">
+                   <widget class="QLineEdit" name="displayEndVal">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="label_21">
+                    <property name="text">
+                     <string>Easing Curve</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1" rowspan="2">
+                   <widget class="QLabel" name="label_19">
+                    <property name="text">
+                     <string>Duration</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="2" rowspan="2">
+                   <widget class="QLineEdit" name="displayDuration"/>
+                  </item>
+                  <item row="7" column="0">
+                   <widget class="QComboBox" name="displayEasingCurve">
+                    <item>
+                     <property name="text">
+                      <string>Linear</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InQuad</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutQuad</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutQuad</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInQuad</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InCubic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutCubic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutCubic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInCubic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InQuart</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutQuart</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutQuart</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInQuart</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InQuint</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutQuint</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutQuint</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInQuint</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InSine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutSine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutSine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInSine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InExpo</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutExpo</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutExpo</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInExpo</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InCirc</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutCirc</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutCirc</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInCirc</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InElastic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutElastic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutElastic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInElastic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InBack</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutBack</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutBack</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInBack</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InBounce</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutBounce</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutBounce</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInBounce</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QGroupBox" name="groupBox_8">
+               <property name="title">
+                <string>Exit Effect</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_23">
+                <item row="0" column="0">
+                 <layout class="QGridLayout" name="gridLayout_14">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_22">
+                    <property name="text">
+                     <string>Property</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="label_23">
+                    <property name="text">
+                     <string>Start Point F</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2" rowspan="2">
+                   <widget class="QLineEdit" name="exitStartPointFX"/>
+                  </item>
+                  <item row="0" column="3" rowspan="2">
+                   <widget class="QLineEdit" name="exitStartPointFY"/>
+                  </item>
+                  <item row="1" column="0" rowspan="2">
+                   <widget class="QComboBox" name="exitProperty">
+                    <item>
+                     <property name="text">
+                      <string>pos</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>rotation</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>scale</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>opacity</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLabel" name="label_24">
+                    <property name="text">
+                     <string>End Point F</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QLineEdit" name="exitEndPointFX"/>
+                  </item>
+                  <item row="2" column="3">
+                   <widget class="QLineEdit" name="exitEndPointFY"/>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_25">
+                    <property name="text">
+                     <string>Direction</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QLabel" name="label_26">
+                    <property name="text">
+                     <string>Start Val</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2" rowspan="2">
+                   <widget class="QLineEdit" name="exitStartVal">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0" rowspan="2">
+                   <widget class="QComboBox" name="exitDirection">
+                    <item>
+                     <property name="text">
+                      <string>Forward</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Backward</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QLabel" name="label_27">
+                    <property name="text">
+                     <string>End Val</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="2">
+                   <widget class="QLineEdit" name="exitEndVal">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="label_28">
+                    <property name="text">
+                     <string>Easing Curve</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1" rowspan="2">
+                   <widget class="QLabel" name="label_29">
+                    <property name="text">
+                     <string>Duration</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="2" rowspan="2">
+                   <widget class="QLineEdit" name="exitDuration"/>
+                  </item>
+                  <item row="7" column="0">
+                   <widget class="QComboBox" name="exitEasingCurve">
+                    <item>
+                     <property name="text">
+                      <string>Linear</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InQuad</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutQuad</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutQuad</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInQuad</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InCubic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutCubic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutCubic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInCubic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InQuart</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutQuart</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutQuart</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInQuart</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InQuint</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutQuint</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutQuint</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInQuint</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InSine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutSine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutSine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInSine</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InExpo</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutExpo</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutExpo</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInExpo</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InCirc</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutCirc</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutCirc</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInCirc</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InElastic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutElastic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutElastic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInElastic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InBack</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutBack</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutBack</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInBack</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InBounce</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutBounce</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>InOutBounce</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>OutInBounce</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="Other"/>
+         <widget class="QWidget" name="ImageEditing">
+          <layout class="QGridLayout" name="gridLayout_22"/>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <widget class="QFrame" name="frame">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QToolButton" name="backButton">
+            <property name="text">
+             <string>...</string>
+            </property>
+            <property name="icon">
+             <iconset resource="images.qrc">
+              <normaloff>:/new/prefix1/resources/left.png</normaloff>:/new/prefix1/resources/left.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="forwardButton">
+            <property name="text">
+             <string>...</string>
+            </property>
+            <property name="icon">
+             <iconset resource="images.qrc">
+              <normaloff>:/new/prefix1/resources/start.png</normaloff>:/new/prefix1/resources/start.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="applyAllButton">
+            <property name="text">
+             <string>Apply All</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="applyButton">
+            <property name="text">
+             <string>Apply</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="escButton">
+            <property name="text">
+             <string>Esc</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>escButton</sender>
+   <signal>released()</signal>
+   <receiver>nodePropertiesDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>794</x>
+     <y>743</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>549</x>
+     <y>123</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>applyButton</sender>
+   <signal>released()</signal>
+   <receiver>nodePropertiesDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>703</x>
+     <y>743</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>574</x>
+     <y>200</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>applyAllButton</sender>
+   <signal>released()</signal>
+   <receiver>nodePropertiesDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>560</x>
+     <y>734</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>9</x>
+     <y>658</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget</sender>
+   <signal>currentRowChanged(int)</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>97</x>
+     <y>251</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>165</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
